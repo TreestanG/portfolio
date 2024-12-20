@@ -1,0 +1,60 @@
+{
+    "projects": [
+        {
+            "title": "TimeWise",
+            "description": "An AI-powered task decomposition engine that utilizes LLMs to decompose complex tasks into actionable sub-tasks. Enhances planning by providing users with an AI-driven framework for project management",
+            "technologies": [
+                "MongoDB",
+                "Python",
+                "SQLAlchemy",
+                "SQL",
+                "Flask",
+                "Next.js",
+                "TailwindCSS"
+            ],
+            "link": "dev",
+            "date": "Current"
+        },
+        {
+            "title": "Culina",
+            "description": "A bespoke, collaborative meal planning platform that allows users to select daily meals and for admins to manage the food database within the site itself. It is designed to streamline family meal management and personalize daily meal plans. ",
+            "technologies": [
+                "Next.js",
+                "TailwindCSS",
+                "Pocketbase"
+            ],
+            "link": "private",
+            "date": "09.27.2024"
+        },
+        {
+            "title": "InstaMessage CLI",
+            "description": "A command-line tool for detailed analysis of Instagram messaging statistics. Enables users to gain insights on daily communication.",
+            "technologies": [
+                "Next.js",
+                "TailwindCSS"
+            ],
+            "link": "https://github.com/TreestanG/insta-messages-cli",
+            "date": "08.12.2024"
+        },
+        {
+            "title": "Spotify Boxed",
+            "description": "An advanced Spotify statistics visualizer that offers users comprehensive insights into their musical preferences and listening habits.",
+            "technologies": [
+                "Next.js",
+                "TailwindCSS"
+            ],
+            "link": "https://github.com/TreestanG/spotify-boxed",
+            "date": "07.08.2024"
+        },
+        {
+            "title": "jayson.database",
+            "description": "A lightweight, efficient JSON database library that provides the fundamental functions for fast, easy, and streamlined data management.",
+            "technologies": [
+                "Next.js",
+                "TailwindCSS"
+            ],
+            "link": "https://github.com/TreestanG/json.db",
+            "date": "06.12.2024"
+        }
+    ]
+}

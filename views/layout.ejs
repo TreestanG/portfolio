@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/router.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: "#D1D5DE",
+            foreground: "#B7B6C2",
+            primary: "#657153",
+            secondary: "#8AAA79",
+            accent: "#837569",
+          },
+        },
+      },
+    };
+  </script>
+
+  <head>
+    <title>Tristan Gee | <%= title %></title>
+  </head>
+</head>
+
+<body class="max-w-screen-lg w-full mx-auto my-40 bg-background">
+  <div class="grid grid-cols-4 h-screen relative gap-4">
+    <div class="col-span-1 sticky top-0 left-0 h-fit">
+      <div class="flex flex-col">
+        <a href="/">
+          <h1 class="text-xl font-bold mt-4">Tristan Gee</h1>
+        </a>
+        <p class="text-sm text-gray-500">software engineer</p>
+
+        <nav class="mt-4 list-inside list-[circle]">
+          <li>
+            <a href="https://www.github.com/treestang" class="text-sm text-blue-700 ">Github</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/tristangee002/" class="text-sm text-blue-700 ">LinkedIn</a>
+          </li>
+          <li>
+            <a href="mailto:tristangee@gmail.com" class="text-sm text-blue-700 ">tristangee@gmail.com</a>
+          </li>
+        </nav>
+
+        <nav class="mt-4 list-inside list-none">
+          <p class="text-lg font-semibold text-gray-700">Links</p>
+          <li>
+            <a href="/" class="text-sm text-blue-700 underline ">/about</a>
+          </li>
+          <li>
+            <a href="/projects" class="text-sm text-blue-700 underline ">/projects</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+    <!-- Content Area -->
+    <main id="main-content" class="col-span-3 md:text-lg"><%- body %></main>
+  </div>
+</body>
+
+</html>
