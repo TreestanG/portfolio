@@ -33,6 +33,13 @@ app.get('/projects', (req, res) => {
     });
 });
 
+app.get('/websites', (req, res) => {
+    res.render('websites', {
+        title: "Websites",
+        header: 'websites'
+    })
+})
+
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
 });

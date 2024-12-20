@@ -6,6 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/router.js"></script>
+  <meta property="og:title" content="Tristan Gee - Software Engineer Portfolio">
+  <meta property="og:description"
+    content="Student developer in San Francisco Bay Area specializing in web development and AI solutions">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.tristangee.com">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tristan Gee - Software Engineer">
+  <meta name="twitter:description" content="Student developer specializing in web development and AI solutions">
+  <link rel="canonical" href="https://www.tristangee.com">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tristan Gee",
+    "jobTitle": "Software Engineer",
+    "url": "https://www.tristangee.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "San Francisco Bay Area"
+    },
+    "sameAs": [
+      "https://www.github.com/treestang",
+      "https://www.linkedin.com/in/tristangee002/"
+    ]
+  }
+  </script>
 
   <script>
     tailwind.config = {
@@ -24,7 +50,8 @@
   </script>
 
   <head>
-    <title>Tristan Gee | <%= title %></title>
+    <title>Tristan Gee | <%= title %>
+    </title>
   </head>
 </head>
 
@@ -58,12 +85,18 @@
           <li>
             <a href="/projects" class="text-sm text-blue-700 underline ">/projects</a>
           </li>
+          <li>
+            <a href="/websites" class="text-sm text-blue-700 underline ">/websites</a>
+          </li>
+
         </nav>
       </div>
     </div>
     <!-- Content Area -->
-    <main id="main-content" class="col-span-3">
-      <h2 class="font-bold text-2xl text-primary mb-4 mt-6 right-0 text-left md:text-right"><%= header %></h2>
+    <main id="main-content" class="col-span-3" role="main">
+      <h2 class="font-bold text-2xl text-primary mb-4 mt-6 right-0 text-left md:text-right">
+        <%= header %>
+      </h2>
       <%- body %>
     </main>
   </div>
