@@ -17,7 +17,7 @@
         },
         {
             "title": "Culina",
-            "description": "A bespoke, collaborative meal planning platform that allows users to select daily meals and for admins to manage the food database within the site itself. It is designed to streamline family meal management and personalize daily meal plans. ",
+            "description": "A collaborative meal planning platform that allows users to select daily meals and admins to manage the food database within the site itself. It is designed to streamline family meal management and personalize daily meal plans. ",
             "technologies": [
                 "Next.js",
                 "TailwindCSS",
