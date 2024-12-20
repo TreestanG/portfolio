@@ -28,16 +28,17 @@
   </head>
 </head>
 
-<body class="max-w-screen-lg w-full mx-auto my-40 bg-background">
-  <div class="grid grid-cols-4 h-screen relative gap-4">
+<body class="max-w-screen-lg w-full mx-auto my-8 p-4 md:my-40 bg-background">
+  <div class="md:grid grid-cols-4 h-screen relative gap-4">
     <div class="col-span-1 sticky top-0 left-0 h-fit">
-      <div class="flex flex-col">
-        <a href="/">
-          <h1 class="text-xl font-bold mt-4">Tristan Gee</h1>
-        </a>
-        <p class="text-sm text-gray-500">software engineer</p>
-
-        <nav class="mt-4 list-inside list-[circle]">
+      <div class="flex flex-row justify-between items-center md:justify-start md:items-start md:flex-col">
+        <div>
+          <a href="/">
+            <h1 class="text-xl font-bold mt-4">Tristan Gee</h1>
+          </a>
+          <p class="text-sm text-gray-500">software engineer</p>
+        </div>
+        <nav class="hidden md:block mt-4 list-inside list-[circle]">
           <li>
             <a href="https://www.github.com/treestang" class="text-sm text-blue-700 ">Github</a>
           </li>
@@ -49,10 +50,10 @@
           </li>
         </nav>
 
-        <nav class="mt-4 list-inside list-none">
-          <p class="text-lg font-semibold text-gray-700">Links</p>
+        <nav class="mt-4 list-inside list-none flex flex-row md:flex-col gap-2">
+          <p class="hidden md:block text-lg font-semibold text-gray-700">Links</p>
           <li>
-            <a href="/" class="text-sm text-blue-700 underline ">/about</a>
+            <a href="/" class="text-sm text-blue-700 underline">/about</a>
           </li>
           <li>
             <a href="/projects" class="text-sm text-blue-700 underline ">/projects</a>
@@ -61,7 +62,10 @@
       </div>
     </div>
     <!-- Content Area -->
-    <main id="main-content" class="col-span-3 md:text-lg"><%- body %></main>
+    <main id="main-content" class="col-span-3 md:text-lg">
+      <h2 class="font-bold text-2xl text-primary mb-4 mt-6 right-0 text-left md:text-right"><%= header %></h2>
+      <%- body %>
+    </main>
   </div>
 </body>
 

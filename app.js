@@ -13,6 +13,7 @@ const projects = require('./public/projects.json')
 app.get('/', (req, res) => {
     res.render('index', {
         title: 'Home',
+        header: 'about'
     });
 });
 
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 app.get('/projects', (req, res) => {
     res.render('projects', {
         title: 'Projects',
+        header: 'projects',
         projects: projects.projects
     });
 });
