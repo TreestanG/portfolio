@@ -1,0 +1,7 @@
+<div class="flex flex-col w-full">
+  <p class="mb-6 text-left md:text-right text-gray-700 ">a library containing pieces of writing showcasing my inner thinking and reflection on the world </p>
+  <% blogs.forEach(blog => { %>
+  <%- include('partials/blogCard', { blog }) %>
+  <%}) %>
+
+</div>
